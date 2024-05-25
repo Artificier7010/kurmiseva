@@ -99,7 +99,7 @@ const Homepage = () => {
               <h3>सपनों को साकार करें - आज ही आवेदन करें!</h3>
             </div>
             <div className="apply-btn">
-              <Link to={'/jobs/apply'}>आवेदन करें</Link>
+              <Link to={'/jobs'}>आवेदन करें</Link>
             </div>
 
 
