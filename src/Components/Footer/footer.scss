@@ -1,0 +1,124 @@
+.footer{
+    width: 100%;
+    min-height:50vh;
+    background: black;
+    .footer-wrap{
+        width: 100%;
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .col{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            h1{
+                color: var(--bhagwa);
+            }
+            p{
+                color: white;
+            }
+            .quicklinks{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+                li{
+                    a{
+                        padding: 5px 12px;
+                        text-decoration: none;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        &::after{
+                            content: "";
+                            width: 0px;
+                            height: 2px;
+                            background: var(--bhagwa);
+                            position: absolute;
+                            bottom: 0;
+                            transition: 0.5s ease;
+                        }
+                        &:hover{
+                            &::after{
+                                width: 100%;
+                                transition: 0.5s ease;
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width:991px) {
+    .footer{
+        
+        .footer-wrap{
+            padding: 10px;
+            
+            flex-direction: column;
+            flex-wrap: wrap;
+            
+            .col{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 30px;
+                h1{
+                    color: var(--bhagwa);
+                }
+                p{
+                    color: white;
+                }
+                .quicklinks{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 30px;
+                    li{
+                        a{
+                            padding: 5px 12px;
+                            text-decoration: none;
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            &::after{
+                                content: "";
+                                width: 0px;
+                                height: 2px;
+                                background: var(--bhagwa);
+                                position: absolute;
+                                bottom: 0;
+                                transition: 0.5s ease;
+                            }
+                            &:hover{
+                                &::after{
+                                    width: 100%;
+                                    transition: 0.5s ease;
+    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+    
+        }
+    }
+}

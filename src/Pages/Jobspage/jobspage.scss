@@ -1,0 +1,89 @@
+.jobspage{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    .jobspage-wrap{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+       
+        .jobs-header{
+            width: 100%;
+            height: 40vh;
+            background: rgb(41, 41, 41);
+            .jobs-header-wrap{
+                width: 100%;
+                height: 100%;
+                background: url(../../assets/Images/headerbg.png);
+                background-position: center bottom;
+                display: flex;
+                align-items: center;
+                padding: 30px;
+                .overlay{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 30px;
+                    h1{
+                        color: white;
+
+                    }
+                    h3{
+                        color: var(--bhagwa);
+                    }
+                }
+
+            }
+        }
+
+        .jobs-display-section{
+            width: 100%;
+            
+            .jb-ds-wrap{
+                width: 100%;
+                padding: 30px;
+                .jobs-title{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                   
+                    img{
+                        width: 20%;
+                    }
+                }
+
+                .table-container{
+                    width: 100%;
+                    margin: 50px 0;
+                    .table-wrap{
+                        width: 100%;
+                        overflow-y: auto;
+                        table{
+                            min-width:90vw;
+                            border-collapse: collapse;
+                            thead{
+                                tr{
+                                    background: black;
+                                    color: white;
+                                    font-family: 'Devnagri';
+                                    th{
+                                        font-size: 1em;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+                
+
+            }
+        }
+    }
+}
